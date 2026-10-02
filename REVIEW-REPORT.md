@@ -87,3 +87,19 @@
 ## Final Verdict
 
 ### ✅ PASS — All 10 replacement slots pass. All retained/deferred slots confirmed intact. No blocking issues.
+
+## Learner journey expansion review
+
+**Date:** 2026-10-02
+**Scope:** Six additional Product Tour gallery views, prioritising Prepare and avatar-led simulation.
+
+| View | Ledger | Appropriateness | Demo label | Verdict |
+|---|---|---|---|---|
+| Learner preparation cards | S30 | Direct learner-facing Prepare evidence | ✅ | **PASS** |
+| Learning pathways | S28 | Shows progression before practice | ✅ | **PASS** |
+| Scenario library | S05 | Shows selection of practice activities | ✅ | **PASS** |
+| Avatar role-play | S02 | Directly demonstrates the requested simulation avatar | ✅ | **PASS** |
+| Dry-run simulation | S03 | Supports safe rehearsal messaging | ✅ | **PASS** |
+| Practice history | S22 | Supports repeat-practice journey messaging | ✅ | **PASS** |
+
+No new image implies customer performance, validated metrics, or live data. The source filename “Actual” for S02 is not used as a public data-status claim.

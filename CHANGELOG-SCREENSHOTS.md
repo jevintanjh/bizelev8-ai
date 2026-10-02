@@ -18,3 +18,16 @@ Data status: all selected screenshots confirmed as demo data by project owner.
 | `product-tour.html` manager | `assets/img/pt5-manager-dashboard.png` | `assets/img/product/manager-home.jpg` | S35 | Replace: manager overview |
 
 The following were deliberately retained or deferred: customer-case covers, sector illustrations, company/team/vision/partner visuals, logos, icons, the P³ framework diagram, mobile visual, and CTA background. See `IMAGE-INVENTORY.md` and `SLOT-MAPPING.md`.
+
+## Learner journey expansion — 2026-10-02
+
+Added six ledger-backed Product Tour gallery views, with emphasis on Prepare and avatar-led simulation:
+
+| New view | Derivative | Ledger ID | Decision |
+|---|---|---|---|
+| Learner preparation cards | `assets/img/product/learner-prepare-cards.jpg` | S30 | Add: learner-facing Prepare evidence |
+| Learning pathways | `assets/img/product/prepare-pathways.jpg` | S28 | Add: visible progression structure |
+| Scenario library | `assets/img/product/practice-scenarios.jpg` | S05 | Add: transition from preparation to practice |
+| Avatar role-play | `assets/img/product/roleplay-avatar.jpg` | S02 | Add: direct simulation-avatar value proposition; demo label |
+| Dry-run simulation | `assets/img/product/practice-dry-run.jpg` | S03 | Add: safe rehearsal evidence |
+| Practice history | `assets/img/product/practice-history.jpg` | S22 | Add: repeat-practice journey |
