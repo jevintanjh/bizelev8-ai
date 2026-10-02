@@ -48,22 +48,23 @@
 <div>
 <h2 style="margin-bottom:8px">Register Your Interest</h2>
 <p style="color:var(--muted);margin-bottom:24px">Tell us about your business and we'll be in touch within two working days to explore fit.</p>
-<div class="form-card">
-<label for="company">Company Name</label><input id="company" type="text" placeholder="Your company">
-<label for="name">Your Name</label><input id="name" type="text" placeholder="Full name">
-<label for="email">Work Email</label><input id="email" type="email" placeholder="you@company.com">
+<form class="form-card" data-lead-form="partner">
+<label for="company">Company Name</label><input id="company" name="company" type="text" placeholder="Your company" required minlength="2">
+<label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Full name" required minlength="2">
+<label for="email">Work Email</label><input id="email" name="email" type="email" placeholder="you@company.com" required>
 <label for="country">Country</label>
-<select id="country"><option>Singapore</option><option>Malaysia</option><option>Indonesia</option><option>Philippines</option><option>Thailand</option><option>Vietnam</option><option>Other</option></select>
+<select id="country" name="country"><option>Singapore</option><option>Malaysia</option><option>Indonesia</option><option>Philippines</option><option>Thailand</option><option>Vietnam</option><option>Other</option></select>
 <label for="ptype">Partner Type</label>
-<select id="ptype"><option>Reseller Partner</option><option>Distribution Partner</option><option>Technology Partner</option></select>
-<label for="msg">Anything we should know?</label><textarea id="msg" rows="3" placeholder="Your clients, reach, or ideas"></textarea>
-<div style="margin-top:20px"><a class="btn btn-primary" href="#">Submit Registration</a></div>
-</div>
+<select id="ptype" name="partnershipType"><option>Reseller Partner</option><option>Distribution Partner</option><option>Technology Partner</option></select>
+<label for="msg">Anything we should know?</label><textarea id="msg" name="message" rows="3" placeholder="Your clients, reach, or ideas"></textarea>
+<label style="display:flex;gap:8px;align-items:start;margin-top:16px"><input name="consent" type="checkbox" required style="width:auto;margin-top:5px"> <span>I agree to the <a href="privacy.html">Privacy Notice</a> and consent to being contacted about P³ CUE.</span></label>
+<div style="margin-top:20px"><button class="btn btn-primary" type="submit">Submit Registration</button></div>
+</form>
 </div>
 <div>
 <div class="card" style="margin-bottom:20px"><h3>What happens next</h3>
 <p>1. We review your registration<br>2. Discovery call (30 min)<br>3. Partner agreement &amp; onboarding<br>4. Sales enablement &amp; first co-selling</p></div>
-<div class="card" style="text-align:center"><h3>Partner programme overview</h3><p style="margin-bottom:14px">One-pager: margins, territories, enablement.</p><a class="btn btn-teal" href="#">Download one-pager</a></div>
+<div class="card" style="text-align:center"><h3>Partner programme overview</h3><p style="margin-bottom:14px">One-pager: margins, territories, enablement.</p><a class="btn btn-teal" href="mailto:hello@bizelev8.ai?subject=Partner%20programme%20overview">Request one-pager</a></div>
 </div>
 </div></section>
 
@@ -73,5 +74,5 @@
 <div><h4>Company</h4><a href="company.html">Partners</a><a href="use-cases.html">Use Cases</a><a href="resources.html">Resources</a></div>
 <div><h4>Contact</h4><a href="mailto:hello@bizelev8.ai">hello@bizelev8.ai</a><a href="https://www.linkedin.com/company/bizelev8" aria-label="LinkedIn"><img src="assets/img/linkedin.png" alt="LinkedIn" style="width:28px;height:28px;margin-top:8px"></a></div>
 </div></footer>
-<script src="nav.js" defer></script>
+<script src="nav.js" defer></script><script src="posthog.js"></script><script src="lead-capture.js"></script>
 </body></html>

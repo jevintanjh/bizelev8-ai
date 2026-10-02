@@ -42,11 +42,12 @@
 </div></div></section>
 
 <div class="band"><h2>Get Notified When We Publish</h2>
-<p>Drop your email — we'll send new case studies and updates, no spam.</p>
-<div class="cta-row" style="justify-content:center">
-<input type="email" placeholder="Work email" style="max-width:260px" aria-label="Work email">
-<a class="btn btn-primary" href="#">Subscribe</a>
-</div></div>
+<p>Register your interest in future case studies and updates. We will only email you once that mailing service is enabled.</p>
+<form class="cta-row" style="justify-content:center" data-lead-form="newsletter">
+<label class="sr-only" for="newsletter-email">Work email</label><input id="newsletter-email" name="email" type="email" placeholder="Work email" style="max-width:260px" required>
+<label style="font-size:.85rem;display:flex;gap:6px;align-items:center"><input name="consent" type="checkbox" required style="width:auto"> I consent to future bizElev8 updates.</label>
+<button class="btn btn-primary" type="submit">Subscribe</button>
+</form><p style="text-align:center;font-size:.85rem;margin-top:12px">By registering, you agree to our <a href="privacy.html">Privacy Notice</a>.</p></div></div>
 
 <footer><div class="wrap foot-grid">
 <div><img src="assets/img/logo.gif?v=2" alt="bizElev8" style="height:64px;width:auto"><p style="margin-top:10px">AI role-play simulation, coaching and learning. Redefining workforce readiness in Southeast Asia.</p></div>
@@ -54,5 +55,5 @@
 <div><h4>Company</h4><a href="company.html">Partners</a><a href="use-cases.html">Use Cases</a><a href="resources.html">Resources</a></div>
 <div><h4>Contact</h4><a href="mailto:hello@bizelev8.ai">hello@bizelev8.ai</a><a href="https://www.linkedin.com/company/bizelev8" aria-label="LinkedIn"><img src="assets/img/linkedin.png" alt="LinkedIn" style="width:28px;height:28px;margin-top:8px"></a></div>
 </div></footer>
-<script src="nav.js" defer></script>
+<script src="nav.js" defer></script><script src="posthog.js"></script><script src="lead-capture.js"></script>
 </body></html>

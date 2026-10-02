@@ -87,24 +87,25 @@
 <div>
 <h2 style="margin-bottom:8px">Book Your Demo</h2>
 <p style="color:var(--muted);margin-bottom:24px">Tell us about your team and we'll tailor a 30-minute walkthrough with scenarios from your industry.</p>
-<div class="card" style="padding:32px">
+<form class="card" style="padding:32px" data-lead-form="demo">
 <div class="grid-2" style="gap:0 20px">
-<label for="d-name">Your Name</label><input id="d-name" type="text" placeholder="Full name">
-<label for="d-email">Work Email</label><input id="d-email" type="email" placeholder="you@company.com">
-<label for="d-company">Company Name</label><input id="d-company" type="text" placeholder="Your company">
+<label for="d-name">Your Name</label><input id="d-name" name="name" type="text" placeholder="Full name" required minlength="2">
+<label for="d-email">Work Email</label><input id="d-email" name="email" type="email" placeholder="you@company.com" required>
+<label for="d-company">Company Name</label><input id="d-company" name="company" type="text" placeholder="Your company" required minlength="2">
 <label for="d-size">Team Size</label>
-<select id="d-size"><option>1–20</option><option>21–100</option><option>101–500</option><option>500+</option></select>
+<select id="d-size" name="teamSize"><option>1–20</option><option>21–100</option><option>101–500</option><option>500+</option></select>
 <label for="d-industry">Industry</label>
-<select id="d-industry"><option>Financial services</option><option>Education &amp; training</option><option>Retail</option><option>Technology</option><option>Contact centers</option><option>Healthcare</option><option>Legal</option><option>Other</option></select>
+<select id="d-industry" name="industry"><option>Financial services</option><option>Education &amp; training</option><option>Retail</option><option>Technology</option><option>Contact centers</option><option>Healthcare</option><option>Legal</option><option>Other</option></select>
 <label for="d-goal">What do you want to improve?</label>
-<select id="d-goal"><option>Sales readiness</option><option>Compliance &amp; advisory</option><option>Onboarding speed</option><option>Customer service quality</option><option>Other</option></select>
+<select id="d-goal" name="goal"><option>Sales readiness</option><option>Compliance &amp; advisory</option><option>Onboarding speed</option><option>Customer service quality</option><option>Other</option></select>
 </div>
-<label for="d-msg">Anything specific you'd like to see?</label><textarea id="d-msg" rows="3" placeholder="e.g. suitability conversations for FA representatives"></textarea>
+<label for="d-msg">Anything specific you'd like to see?</label><textarea id="d-msg" name="message" rows="3" placeholder="e.g. suitability conversations for FA representatives"></textarea>
+<label style="display:flex;gap:8px;align-items:start;margin-top:16px"><input name="consent" type="checkbox" required style="width:auto;margin-top:5px"> <span>I agree to the <a href="privacy.html">Privacy Notice</a> and consent to being contacted about P³ CUE.</span></label>
 <div style="margin-top:20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="#">Book My Demo</a>
+<button class="btn btn-primary" type="submit">Book My Demo</button>
 <span style="font-size:.85rem;color:var(--muted)">30-minute live walkthrough · No credit card · We reply within one working day</span>
 </div>
-</div>
+</form>
 </div>
 <div>
 <div class="card" style="margin-bottom:20px"><h3>What happens in the demo</h3>
@@ -120,5 +121,5 @@
 <div><h4>Company</h4><a href="company.html">Partners</a><a href="use-cases.html">Use Cases</a><a href="resources.html">Resources</a></div>
 <div><h4>Contact</h4><a href="mailto:hello@bizelev8.ai">hello@bizelev8.ai</a><a href="https://www.linkedin.com/company/bizelev8" aria-label="LinkedIn"><img src="assets/img/linkedin.png" alt="LinkedIn" style="width:28px;height:28px;margin-top:8px"></a></div>
 </div></footer>
-<script src="nav.js" defer></script>
+<script src="nav.js" defer></script><script src="posthog.js"></script><script src="lead-capture.js"></script>
 </body></html>
