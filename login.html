@@ -13,24 +13,26 @@
 </style></head><body>
 <header><div class="wrap"><nav>
 <a class="logo" href="index.html"><img src="assets/img/logo.gif?v=2" alt="bizElev8 P³ CUE" style="height:64px;width:auto"></a>
-<button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('mnav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><span></span><span></span><span></span></button>
+<button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mnav" type="button"><span></span><span></span><span></span></button>
 <div class="nav-links" id="mnav">
 <a href="index.html#why">Why it matters</a><a href="product-tour.html">Our P³ CUE</a><a href="use-cases.html">Use cases</a><a href="company.html">Company</a>
-</div><a class="btn btn-ghost" href="login.html">Log in</a>
+<div class="nav-cta"><a class="btn btn-ghost" href="https://app.bizelev8.ai">Log in</a><a class="btn btn-primary" href="pricing.html#contact">Get a demo</a></div>
+</div><a class="btn btn-ghost" href="https://app.bizelev8.ai">Log in</a>
 <a class="btn btn-primary" href="pricing.html#contact">Get a demo</a>
 </nav></div></header>
 
 <div class="login-wrap"><div class="login-card">
+<h1 style="font-size:2rem;margin-bottom:18px;text-align:center">Log in to P³ CUE</h1>
 <div class="tabs"><a class="active" href="#">Login</a><a href="company.html">Request Access</a></div>
 <div class="form-card">
 <h3 style="margin-bottom:4px">Welcome back</h3>
 <p style="color:var(--muted);font-size:.9rem;margin-bottom:8px">Log in to your P³ CUE workspace.</p>
 <label for="email">Work Email</label><input id="email" type="email" placeholder="you@company.com">
 <label for="pw">Password</label><input id="pw" type="password" placeholder="••••••••">
-<div style="margin:20px 0 8px"><a class="btn btn-teal" href="#" style="width:100%;text-align:center">Login</a></div>
-<p style="text-align:right;font-size:.85rem"><a href="#">Forgot password?</a></p>
+<div style="margin:20px 0 8px"><a class="btn btn-teal" href="https://app.bizelev8.ai" style="width:100%;text-align:center">Login</a></div>
+<p style="text-align:right;font-size:.85rem"><a href="https://app.bizelev8.ai">Forgot password?</a></p>
 <div class="divider">OR</div>
-<a class="btn btn-ghost" href="#" style="width:100%;text-align:center">Continue with SSO</a>
+<a class="btn btn-ghost" href="https://app.bizelev8.ai" style="width:100%;text-align:center">Continue with SSO</a>
 <p class="sso">New here? <a href="pricing.html"><b>Book a demo</b></a> to get started.</p>
 </div>
 </div></div>
@@ -38,4 +40,5 @@
 <footer><div class="wrap" style="text-align:center">
 <p>© 2026 bizElev8 · AI role-play simulation, coaching and learning</p>
 </div></footer>
+<script src="nav.js" defer></script>
 </body></html>
